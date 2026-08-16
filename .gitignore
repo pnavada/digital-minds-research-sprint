@@ -1,0 +1,76 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Environments
+.venv/
+venv/
+env/
+.env
+.envrc
+
+# Secrets — never commit API keys
+*.key
+secrets.json
+.env.local
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Model weights and caches
+models/
+checkpoints/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.gguf
+.cache/
+hf_cache/
+~/.cache/huggingface
+
+# Extracted artifacts — regenerable, often large
+vectors/
+activations/
+*.npy
+*.npz
+
+# Experiment outputs
+outputs/
+results/raw/
+runs/
+wandb/
+logs/
+*.log
+
+# Datasets — pull from source, don't vendor
+data/raw/
+data/interim/
+*.jsonl.gz
+*.parquet
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# LaTeX build artifacts (report)
+*.aux
+*.bbl
+*.blg
+*.out
+*.synctex.gz
+*.fdb_latexmk
+*.fls
