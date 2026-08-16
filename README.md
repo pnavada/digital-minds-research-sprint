@@ -35,7 +35,7 @@ $$\text{WIA} = \text{TP} - \text{FP}$$
 
 Detection rate alone is meaningless. Lindsey's ~20% true-positive rate is only interesting because his false-positive rate is ~0%.
 
-> **Note.** Unlike concept injection, welfare has no clean null — the model always has *some* welfare state. The null is therefore defined as the per-prompt unsteered projection $\pi_0(x)$, not zero. See `RESEARCH_PLAN.md` §6.
+> **Note.** Unlike concept injection, welfare has no clean null — the model always has *some* welfare state. The null is therefore defined as the per-prompt unsteered projection $\pi_0(x)$, not zero. See [`static/RESEARCH_PLAN.md`](static/RESEARCH_PLAN.md) §6.
 
 ---
 
@@ -43,8 +43,9 @@ Detection rate alone is meaningless. Lindsey's ~20% true-positive rate is only i
 
 ```
 .
-├── RESEARCH_PLAN.md          # full experimental design — start here
-├── static/                   # source material and reading notes
+├── static/
+│   ├── RESEARCH_PLAN.md      # full experimental design — start here
+│   └── *.docx                # source material and reading notes
 ├── welfareprobe/             # the instrument (planned)
 │   ├── probes/               # prompt bank + paraphrase sets
 │   ├── extract.py            # concept vector extraction
@@ -57,7 +58,7 @@ Detection rate alone is meaningless. Lindsey's ~20% true-positive rate is only i
 
 ## Experiment index
 
-Full specifications in [`RESEARCH_PLAN.md`](RESEARCH_PLAN.md).
+Full specifications in [`static/RESEARCH_PLAN.md`](static/RESEARCH_PLAN.md).
 
 **Paper spine** — E0.1 → E3.2 → E3.4 → E3.10 → E2.5
 
@@ -80,12 +81,12 @@ Full specifications in [`RESEARCH_PLAN.md`](RESEARCH_PLAN.md).
 
 Primary: `Qwen/Qwen3-4B-Instruct-2507` (matches functionalwelfare's primary model for direct comparability).
 
-Scale ladder, post-training chains, and cross-family models listed in `RESEARCH_PLAN.md` §2.
+Scale ladder, post-training chains, and cross-family models listed in [`static/RESEARCH_PLAN.md`](static/RESEARCH_PLAN.md) §2.
 
 ## Data
 
 All third-party. Verified available: `allenai/WildChat-1M`, `lmsys/toxic-chat`, `Anthropic/hh-rlhf` (red-team-attempts), Tulu 3 and OLMo 2 checkpoints.
-Unverified at time of writing: NRC-VAD, EmoBank, SAD, MASK, XSTest. See `RESEARCH_PLAN.md` §3.
+Unverified at time of writing: NRC-VAD, EmoBank, SAD, MASK, XSTest. See [`static/RESEARCH_PLAN.md`](static/RESEARCH_PLAN.md) §3.
 
 ---
 
